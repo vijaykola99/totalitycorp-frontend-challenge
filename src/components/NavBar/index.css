@@ -1,0 +1,121 @@
+.navbar-background {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90vw;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.logo {
+  height: 15px;
+  width: 150px;
+
+  font-weight: 20px;
+  cursor: pointer;
+}
+.model-names-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 38vw;
+  cursor: pointer;
+}
+.account-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 12vw;
+}
+.header-text {
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px;
+}
+.header-text:hover {
+  background: rgba(136, 158, 182, 0.4);
+}
+.menu-button {
+  border: 0px;
+  color: #171a20;
+  color: black;
+  font-weight: 500;
+  font-family: "Roboto";
+  font-size: 16px;
+  background: transparent;
+  height: 40px;
+  width: 70px;
+  margin-top: 18px;
+}
+.menu-button:hover {
+  background: rgba(136, 158, 182, 0.4);
+}
+.menu-bar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #ffffff;
+  width: 300px;
+  height: 100vh;
+  list-style-type: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  overflow-y: scroll;
+  transition: width 2s;
+}
+.close-icon {
+  margin-left: auto;
+  font-size: 20px;
+  cursor: pointer;
+}
+.close-icon:hover {
+  background: rgba(136, 158, 182, 0.4);
+}
+.list-item {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.link {
+  color: #000000;
+  text-decoration: none;
+}
+.list-item:hover {
+  background: rgba(136, 158, 182, 0.4);
+}
+.language-container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0px;
+}
+.list-item-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .header-text {
+    display: none;
+  }
+  .model-names-container {
+    display: none;
+  }
+  .navbar-background {
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+    margin-top: 60px;
+  }
+  .menu-button {
+    background-color: #0000000d;
+    background: rgba(136, 158, 182, 0.4);
+    margin-top: 14px;
+  }
+}
